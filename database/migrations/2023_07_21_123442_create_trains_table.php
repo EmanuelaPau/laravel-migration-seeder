@@ -21,7 +21,7 @@ return new class extends Migration {
             $table->dateTime('leaving_time');
             $table->dateTime('arrival_time');
             $table->string('train_code', 20);
-            $table->tinyInteger('number_of_carts');
+            $table->smallInteger('number_of_carts');
             $table->boolean('in_time');
             $table->boolean('canceled');
         });
